@@ -5,5 +5,12 @@
 	let { children } = $props();
 </script>
 
+<nav>
+	<a href="/">Home</a>
+	<a href="/officers">Officers</a>
+	<a href="/gallery">Gallery</a>
+	<a href="/shpetinas">Shpetinas</a>
+</nav>
+
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 {@render children()}
