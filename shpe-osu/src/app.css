@@ -81,6 +81,7 @@
 
 body {
   font-family: var(--font-serif);
+  background-color: var(--color-background);
   border: 0px;
   font-size: 100%;
   font-style: inherit;
@@ -102,20 +103,4 @@ body {
   align-items: center;
   padding: var(--size-100) 0;
   gap: var(--size-900);
-}
-
-nav {
-  flex: 1;
-  display: flex;
-  gap: var(--size-080);
-}
-
-.nav-link {
-  flex: 1;
-  font-size: var(--size-090);
-  padding: var(--size-080) var(--size-100);
-  border-radius: 999em;
-  border-color: var(--color-brand-dark);
-  border-width: 2px;
-  text-align: center;
 }

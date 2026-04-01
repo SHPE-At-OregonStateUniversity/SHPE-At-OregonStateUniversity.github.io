@@ -15,7 +15,7 @@
   .nav-link {
     flex: 1;
     font-size: var(--size-090);
-    padding: var(--size-080) var(--size-100);
+    padding: var(--size-050) var(--size-080);
     border-radius: 999em;
     border-color: var(--color-brand-dark);
     border-width: 2px;
