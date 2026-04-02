@@ -9,7 +9,7 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
-<div class="site-header">
+<div class="site-header page">
 	<p>
 		Logo
 	</p>

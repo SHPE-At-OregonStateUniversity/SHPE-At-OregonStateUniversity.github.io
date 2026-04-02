@@ -103,14 +103,5 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: var(--size-100) 0;
-  gap: var(--size-900);
-}
-
-.site-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: var(--size-900);
-  padding-right: var(--size-900);
-  gap: var(--size-900);
+  gap: var(--size-080);
 }
