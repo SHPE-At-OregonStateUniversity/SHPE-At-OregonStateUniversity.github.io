@@ -1,6 +1,7 @@
 <script lang="ts">
   import { page } from '$app/state';
 </script>
+
 <nav>
   <a class="nav-link" href="/">Home</a>
   <a class="nav-link" href="/officers">Officers</a>
