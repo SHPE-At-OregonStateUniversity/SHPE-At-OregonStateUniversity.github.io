@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import NavBar from '$lib/components/NavBar.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	import favicon from '$lib/assets/favicon.svg';
 
 	let { children } = $props();
@@ -18,3 +19,5 @@
 <main class="page">
   {@render children()}
 </main>
+
+<Footer />

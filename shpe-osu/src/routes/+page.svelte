@@ -1,12 +1,20 @@
 <div class="content">
   <div class="hero">
-    <span class="est">est. 2010</span>
-    <h1>SHPE</h1>
-    <p>@oregonstate</p>
+    <div class="logo">
+      <span class="est">est. 2010</span>
+
+      <h1>SHPE</h1>
+      <p>@oregonstate</p>
+    </div>
+
+    <div class="description">
+      <h1>We are the society of Hispanic Professional Engineers at </h1>
+      <div class="osu">
+        <h1>Oregon State University.</h1>
+      </div>
+    </div>
   </div>
-  <div class="description">
-    <h1>We are the society of Hispanic Professional Engineers at Oregon State University.</h1>
-  </div>
+
   <div class="page-body">
     <p>
       Lorem Ipsum, Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum. Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum .
@@ -24,32 +32,45 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    padding: var(--size-100);
+    max-width: 20rem;
+    padding-bottom: var(--size-500)
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-top: var(--size-100);
+    padding-bottom: var(--size-100);
   }
   .est {
     margin-bottom: -1.5rem
   }
-  .hero h1 {
-    font-size: var(--size-900);
+  .logo h1 {
+    font-size: var(--size-1000);
     font-weight: 400;
     color: var(--color-brand-dark);
   }
-  .hero p {
+  .logo p {
     font-size: var(--size-200);
     font-weight: 400;
     color: var(--color-brand-dark);
     margin-top: -1.5rem;
   }
   .description h1 {
-    font-size: var(--size-300);
+    font-size: var(--size-200);
     font-weight: 400;
     color: var(--color-brand-dark);
-    padding-left: var(--)
+  }
+  .osu h1 {
+    color: var(--color-brand-primary)
   }
   p {
     font-size: var(--size-100);
     font-weight: 100;
     color: var(--color-brand-dark);
+  }
+  .page-body {
+
   }
 
 </style>

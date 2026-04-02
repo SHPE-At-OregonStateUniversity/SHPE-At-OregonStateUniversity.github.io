@@ -63,6 +63,7 @@
   --size-700: 2.986rem; /* display */
   --size-800: 3.583rem; /* large display */
   --size-900: 4.299rem; /* hero/max display */
+  --size-1000: 6rem; /* Super Hero */
 
   /* Margins */
   --page-margin: var(--size-100);
@@ -102,5 +103,14 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: var(--size-100) 0;
+  gap: var(--size-900);
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: var(--size-900);
+  padding-right: var(--size-900);
   gap: var(--size-900);
 }
