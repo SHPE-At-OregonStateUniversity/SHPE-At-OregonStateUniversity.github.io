@@ -1,30 +1,9 @@
 @import "tailwindcss";
 @import '@fontsource/source-serif-4';
 
-@theme {
+:root {
   /* === Typography === */
   --font-serif: "Source Serif 4", serif;
-
-  --text-xs: 0.75rem;    /* 12px */
-  --text-sm: 0.875rem;   /* 14px */
-  --text-base: 1rem;     /* 16px - body default*/
-  --text-lg: 1.125rem;   /* 18px */
-  --text-xl: 1.25rem;    /* 20px */
-  --text-2xl: 1.5rem;    /* 24px */
-  --text-3xl: 2rem;      /* 32px - H1 */
-  --text-4xl: 2.75rem;   /* 44px - display */
-
-  /* === Spacing === */
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 12px;
-  --space-4: 16px;
-  --space-5: 20px;
-  --space-6: 24px;
-  --space-7: 28px;
-  --space-8: 32px;
-  --space-9: 36px;
-  --space-10: 40px;
 
   /* === Brand Colors === */
   --color-brand-primary: #d73f09;   /* Beaver Orange */
@@ -62,10 +41,81 @@
 
   /* === Border Radius === */
   --radius-full: 9999px;
+
+  /* sub-base - fine spacing, captions, labels */
+  --size-010: 0.193rem;
+  --size-020: 0.232rem;
+  --size-030: 0.279rem;
+  --size-040: 0.334rem;
+  --size-050: 0.4rem;
+  --size-060: 0.482rem;
+  --size-070: 0.579rem;
+  --size-080: 0.694rem;
+  --size-090: 0.833rem;
+  
+  /* main scale - type and spacing */
+  --size-100: 1rem;     /* body text, base spacing */
+  --size-200: 1.2rem;   /* small headings, comfortable padding */
+  --size-300: 1.44rem;  /* subheadings */
+  --size-400: 1.728rem; /* h3 range */
+  --size-500: 2.074rem; /* h2 range */
+  --size-600: 2.488rem; /* h1 range */
+  --size-700: 2.986rem; /* display */
+  --size-800: 3.583rem; /* large display */
+  --size-900: 4.299rem; /* hero/max display */
+
+  /* Margins */
+  --page-margin: var(--size-100);
+  --max-width: 70rem;
 }
 
-@layer base {
-  body {
-    font-family: var(--font-serif);
-  }
+/* Breakpoints */
+@media (min-width: 27rem) { :root { font-size: 1.05rem; } }
+@media (min-width: 36rem) { :root { font-size: 1.1rem; } }
+@media (min-width: 48rem) { :root { font-size: 1.15rem; } }
+@media (min-width: 64rem) { :root { font-size: 1.2rem; } }
+@media (min-width: 77rem) { :root { font-size: 1.25rem; } }
+@media (min-width: 94rem) { :root { font-size: 1.3rem; } }
+@media (min-width: 48rem) { :root { --page-margin: var(--size-500); } }
+@media (min-width: 64rem) { :root { --page-margin: var(--size-800); } }
+
+body {
+  font-family: var(--font-serif);
+  border: 0px;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0px;
+  outline: 0px;
+  padding: 0px;
+  vertical-align: baseline;
+}
+
+.page {
+  padding-left: var(--page-margin);
+  padding-right: var(--page-margin);
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--size-100) 0;
+  gap: var(--size-900);
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  gap: var(--size-080);
+}
+
+.nav-link {
+  flex: 1;
+  font-size: var(--size-090);
+  padding: var(--size-080) var(--size-100);
+  border-radius: 999em;
+  border-color: var(--color-brand-dark);
+  border-width: 2px;
+  text-align: center;
 }
