@@ -90,7 +90,6 @@ body {
   margin: 0px;
   outline: 0px;
   padding: 0px;
-  vertical-align: baseline;
 }
 
 .page {
@@ -98,10 +97,3 @@ body {
   padding-right: var(--page-margin);
 }
 
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--size-100) 0;
-  gap: var(--size-080);
-}
