@@ -1,0 +1,17 @@
+[
+    {
+        "id": "jimenaNoa",
+        "name": "Jimena Noa",
+        "position": "President",
+        "image":    "/testImage.jpg"
+    },
+    {
+        "id": "antonioRodriguez",
+        "name": "Antonio Rodriguez",
+        "position": "Vice President",
+        "image":    "/testImage.jpg"
+    }
+
+
+
+]
