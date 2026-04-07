@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Homepage</title>
+</svelte:head>
+
 <div class="content">
   <div class="hero">
 
@@ -8,9 +12,9 @@
     </div>
 
     <div class="description">
-      <h1>We are the society of Hispanic Professional Engineers at </h1>
+      <p>We are the society of Hispanic Professional Engineers at </p>
       <div class="osu">
-        <h1>Oregon State University.</h1>
+        <p>Oregon State University.</p>
       </div>
     </div>
 
@@ -32,40 +36,47 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: var(--size-200);
     max-width: 20rem;
-    padding-bottom: var(--size-500)
+    padding-bottom: var(--size-500);
   }
   .logo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: var(--size-100);
-    padding-bottom: var(--size-100);
+    gap: var(--size-020);
   }
-  .est {
-    margin-bottom: -1.5rem
+  .logo h1,
+  .logo p,
+  .logo .est {
+    margin: 0;
   }
   .logo h1 {
     font-size: var(--size-1000);
     font-weight: 400;
     color: var(--color-brand-dark);
+    line-height: 0.9;
   }
+  .logo p,
+  .logo .est {
+    line-height: 1;
+  }
+
   .logo p {
     font-size: var(--size-200);
     font-weight: 400;
     color: var(--color-brand-dark);
-    margin-top: -1.5rem;
   }
   .description {
-    padding-left: var(--size-500);
+    margin-left: var(--size-500);
   }
-  .description h1 {
+  .description p {
     font-size: var(--size-200);
     font-weight: 400;
     color: var(--color-brand-dark);
   }
-  .osu h1 {
-    color: var(--color-brand-primary)
+  .osu p {
+    color: var(--color-brand-primary);
   }
   p {
     font-size: var(--size-080);

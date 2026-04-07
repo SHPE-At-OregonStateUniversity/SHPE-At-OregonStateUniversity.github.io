@@ -9,10 +9,12 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
-<Header />
+<div class="page">
+	<Header />
 
-<main class="page">
-  {@render children()}
-</main>
+	<main>
+		{@render children()}
+	</main>
 
-<Footer />
+	<Footer />
+</div>

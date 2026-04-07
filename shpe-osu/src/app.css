@@ -93,7 +93,6 @@ body {
 }
 
 .page {
-  padding-left: var(--page-margin);
-  padding-right: var(--page-margin);
+  padding-inline: var(--page-margin);
 }
 
