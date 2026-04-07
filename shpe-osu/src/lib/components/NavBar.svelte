@@ -10,7 +10,7 @@
 </script>
 
 <nav>
-  <ul id="primary-navigation" class="primary-navigation flex">
+  <ul id="primary-navigation" class="primary-navigation">
     {#each links as { href, label } (href)}
       <li class="nav-link">
         <a
@@ -26,24 +26,32 @@
 </nav>
 
 <style>
-  @media (min-width: 35em) {
+  .primary-navigation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--size-060);
+  }
+
+  .primary-navigation .nav-link:first-child {
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: 36rem) {
     nav {
       flex: 1;
     }
 
-    .flex {
-      gap: var(--size-080);
+    .primary-navigation {
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--size-010);
+    }
+
+    .primary-navigation .nav-link:first-child {
+      grid-column: auto;
     }
   }
 
-  .flex {
-    display: flex;
-    gap: var(--size-080);
-  }
-
   .nav-link {
-    flex: 1;
-    font-size: var(--size-100);
     min-width: 0;
   }
 
@@ -53,11 +61,18 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: var(--size-010) var(--size-080);
+    padding: var(--size-060) var(--size-080);
     border-radius: 999em;
     border: 2px solid var(--color-brand-dark);
     text-align: center;
     text-decoration: none;
     color: inherit;
+  }
+
+  @media (min-width: 36rem) {
+    .nav-link a{
+      font-size: var(--size-200);
+      padding: var(--size-010) var(--size-080);
+    }
   }
 </style>

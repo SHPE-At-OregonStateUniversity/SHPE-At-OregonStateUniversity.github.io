@@ -71,7 +71,6 @@
 }
 
 /* Breakpoints */
-@media (min-width: 27rem) { :root { font-size: 1.05rem; } }
 @media (min-width: 36rem) { :root { font-size: 1.1rem; } }
 @media (min-width: 48rem) { :root { font-size: 1.15rem; } }
 @media (min-width: 64rem) { :root { font-size: 1.2rem; } }

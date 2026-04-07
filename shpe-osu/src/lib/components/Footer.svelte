@@ -27,6 +27,19 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  .site-footer img {
+    width: var(--size-800);
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  @media (min-width: 36rem) {
+    .site-footer img {
+      width: 4rem;
+    }
+  }
+
 	.header {
 		font-size: var(--size-200);
 		font-weight: 600;
