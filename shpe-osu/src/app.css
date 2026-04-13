@@ -63,6 +63,7 @@
   --size-700: 2.986rem; /* display */
   --size-800: 3.583rem; /* large display */
   --size-900: 4.299rem; /* hero/max display */
+  --size-1000: 6rem; /* Super Hero */
 
   /* Margins */
   --page-margin: var(--size-100);
@@ -70,7 +71,6 @@
 }
 
 /* Breakpoints */
-@media (min-width: 27rem) { :root { font-size: 1.05rem; } }
 @media (min-width: 36rem) { :root { font-size: 1.1rem; } }
 @media (min-width: 48rem) { :root { font-size: 1.15rem; } }
 @media (min-width: 64rem) { :root { font-size: 1.2rem; } }
@@ -81,6 +81,7 @@
 
 body {
   font-family: var(--font-serif);
+  background-color: var(--color-background);
   border: 0px;
   font-size: 100%;
   font-style: inherit;
@@ -88,34 +89,9 @@ body {
   margin: 0px;
   outline: 0px;
   padding: 0px;
-  vertical-align: baseline;
 }
 
 .page {
-  padding-left: var(--page-margin);
-  padding-right: var(--page-margin);
+  padding-inline: var(--page-margin);
 }
 
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--size-100) 0;
-  gap: var(--size-900);
-}
-
-nav {
-  flex: 1;
-  display: flex;
-  gap: var(--size-080);
-}
-
-.nav-link {
-  flex: 1;
-  font-size: var(--size-090);
-  padding: var(--size-080) var(--size-100);
-  border-radius: 999em;
-  border-color: var(--color-brand-dark);
-  border-width: 2px;
-  text-align: center;
-}
