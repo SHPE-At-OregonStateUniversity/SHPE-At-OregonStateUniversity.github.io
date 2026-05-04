@@ -80,18 +80,19 @@
 @media (min-width: 64rem) { :root { --page-margin: var(--size-800); } }
 
 body {
+  margin: 0px;
   font-family: var(--font-serif);
   background-color: var(--color-background);
   border: 0px;
   font-size: 100%;
   font-style: inherit;
   font-weight: inherit;
-  margin: 0px;
-  outline: 0px;
-  padding: 0px;
 }
 
 .page {
+  min-block-size: 100svh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   padding-inline: var(--page-margin);
 }
 
