@@ -26,6 +26,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+		padding-top: var(--size-600);
   }
 
   .site-footer img {
