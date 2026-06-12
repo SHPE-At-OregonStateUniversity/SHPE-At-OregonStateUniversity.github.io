@@ -1,17 +1,14 @@
 [
-    {
-        "id": "jimenaNoa",
-        "name": "Jimena Noa",
-        "position": "President",
-        "image":    "/testImage.jpg"
-    },
-    {
-        "id": "antonioRodriguez",
-        "name": "Antonio Rodriguez",
-        "position": "Vice President",
-        "image":    "/testImage.jpg"
-    }
-
-
-
+	{
+		"id": "jimenaNoa",
+		"name": "Jimena Noa",
+		"position": "President",
+		"image": "https://res.cloudinary.com/<CLOUD_NAME>/image/upload/f_auto,q_auto,w_400/shpe-osu/officers/jimena-noa"
+	},
+	{
+		"id": "antonioRodriguez",
+		"name": "Antonio Rodriguez",
+		"position": "Vice President",
+		"image": "https://res.cloudinary.com/<CLOUD_NAME>/image/upload/f_auto,q_auto,w_400/shpe-osu/officers/antonio-rodriguez"
+	}
 ]
