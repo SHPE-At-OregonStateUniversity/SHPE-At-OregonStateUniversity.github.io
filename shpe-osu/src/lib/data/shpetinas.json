@@ -1,0 +1,20 @@
+[
+	{
+		"id": "shpetina1",
+		"name": "Member Name",
+		"role": "SHPEtinas Lead",
+		"image": "https://res.cloudinary.com/<CLOUD_NAME>/image/upload/f_auto,q_auto,w_400/shpe-osu/shpetinas/member-1"
+	},
+	{
+		"id": "shpetina2",
+		"name": "Member Name",
+		"role": "Member",
+		"image": "https://res.cloudinary.com/<CLOUD_NAME>/image/upload/f_auto,q_auto,w_400/shpe-osu/shpetinas/member-2"
+	},
+	{
+		"id": "shpetina3",
+		"name": "Member Name",
+		"role": "Member",
+		"image": "https://res.cloudinary.com/<CLOUD_NAME>/image/upload/f_auto,q_auto,w_400/shpe-osu/shpetinas/member-3"
+	}
+]
