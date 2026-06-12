@@ -1,1 +1,2 @@
-// place files you want to import through the `$lib` alias in this folder.
+export { cld, CLOUDINARY_CLOUD_NAME } from './images';
+export { default as CloudinaryImage } from './components/CloudinaryImage.svelte';
