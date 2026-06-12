@@ -1,17 +1,41 @@
 [
 	{
-		"publicId": "shpe-osu/gallery/placeholder-01",
-		"alt": "SHPE OSU members at a chapter meeting",
-		"caption": "Chapter meeting"
+		"event": "Fall Kickoff",
+		"photos": [
+			{
+				"publicId": "shpe-osu/gallery/fall-kickoff-01",
+				"alt": "Members at the fall kickoff meeting"
+			},
+			{
+				"publicId": "shpe-osu/gallery/fall-kickoff-02",
+				"alt": "Students introducing themselves at kickoff"
+			},
+			{ "publicId": "shpe-osu/gallery/fall-kickoff-03", "alt": "Kickoff group photo" }
+		]
 	},
 	{
-		"publicId": "shpe-osu/gallery/placeholder-02",
-		"alt": "SHPE OSU members volunteering at an outreach event",
-		"caption": "Community outreach"
+		"event": "National Convention",
+		"photos": [
+			{
+				"publicId": "shpe-osu/gallery/convention-01",
+				"alt": "Chapter members at the SHPE National Convention"
+			},
+			{
+				"publicId": "shpe-osu/gallery/convention-02",
+				"alt": "Members at the convention career fair"
+			},
+			{ "publicId": "shpe-osu/gallery/convention-03", "alt": "Convention closing ceremony" }
+		]
 	},
 	{
-		"publicId": "shpe-osu/gallery/placeholder-03",
-		"alt": "SHPE OSU members at the national convention",
-		"caption": "SHPE National Convention"
+		"event": "Community Outreach",
+		"photos": [
+			{
+				"publicId": "shpe-osu/gallery/outreach-01",
+				"alt": "Members volunteering at a local school"
+			},
+			{ "publicId": "shpe-osu/gallery/outreach-02", "alt": "STEM demo for local students" },
+			{ "publicId": "shpe-osu/gallery/outreach-03", "alt": "Outreach team group photo" }
+		]
 	}
 ]

@@ -22,8 +22,8 @@ describe('cld', () => {
 // real asset is uploaded. Run with: RUN_NETWORK_TESTS=1 npm run test
 describe.runIf(process.env.RUN_NETWORK_TESTS === '1')('cloudinary delivery (network)', () => {
 	it('serves the first gallery asset', async () => {
-		const first = gallery[0];
-		expect(first, 'gallery.json must have at least one entry').toBeDefined();
+		const first = gallery[0]?.photos[0];
+		expect(first, 'gallery.json must have at least one event with a photo').toBeDefined();
 		const res = await fetch(cld(first.publicId, 'f_auto,q_auto,w_400'));
 		expect(res.status).toBe(200);
 	});
