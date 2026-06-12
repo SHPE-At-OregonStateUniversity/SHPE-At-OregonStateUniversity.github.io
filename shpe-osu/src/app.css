@@ -1,96 +1,123 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @import '@fontsource/source-serif-4';
 
 :root {
-  /* === Typography === */
-  --font-serif: "Source Serif 4", serif;
+	/* === Typography === */
+	--font-serif: 'Source Serif 4', serif;
 
-  /* === Brand Colors === */
-  --color-brand-primary: #d73f09;   /* Beaver Orange */
-  --color-brand-dark: #000000;      /* Paddletail Black */
-  --color-brand-cream: #fdfaf3;     /* Cream */
-  --color-neutral-500: #c26340;     /* Warm copper */
-  --color-neutral-900: #1a1a1a;     /* Near-black */
+	/* === Brand Colors === */
+	--color-brand-primary: #d73f09; /* Beaver Orange */
+	--color-brand-dark: #000000; /* Paddletail Black */
+	--color-brand-cream: #fdfaf3; /* Cream */
+	--color-neutral-500: #c26340; /* Warm copper */
+	--color-neutral-900: #1a1a1a; /* Near-black */
 
-  /* === Semantic Surface Tokens === */
-  --color-background: #fdfaf3;
-  --color-foreground: #000000;
-  --color-card: #f5f0e6;
+	/* === Semantic Surface Tokens === */
+	--color-background: #fdfaf3;
+	--color-foreground: #000000;
+	--color-card: #f5f0e6;
 
-  /* === Text Hierarchy === */
-  --color-text-primary: #000000;
-  --color-text-secondary: #3d2b1f;
-  --color-text-tertiary: #7a5c4e;
+	/* === Text Hierarchy === */
+	--color-text-primary: #000000;
+	--color-text-secondary: #3d2b1f;
+	--color-text-tertiary: #7a5c4e;
 
-  /* === Feedback Colors === */
-  /* Success — warm sage green, earthy not minty */
-  --color-success: oklch(0.45 0.13 150);
-  --color-success-emphasis: oklch(0.94 0.04 150);
+	/* === Feedback Colors === */
+	/* Success — warm sage green, earthy not minty */
+	--color-success: oklch(0.45 0.13 150);
+	--color-success-emphasis: oklch(0.94 0.04 150);
 
-  /* Warning — golden amber, distinct from brand red-orange (hue ~22) */
-  --color-warning: oklch(0.55 0.16 80);
-  --color-warning-emphasis: oklch(0.95 0.05 80);
+	/* Warning — golden amber, distinct from brand red-orange (hue ~22) */
+	--color-warning: oklch(0.55 0.16 80);
+	--color-warning-emphasis: oklch(0.95 0.05 80);
 
-  /* Danger — deep crimson, more saturated/cooler than brand orange-red */
-  --color-danger: oklch(0.48 0.22 15);
-  --color-danger-emphasis: oklch(0.94 0.06 15);
+	/* Danger — deep crimson, more saturated/cooler than brand orange-red */
+	--color-danger: oklch(0.48 0.22 15);
+	--color-danger-emphasis: oklch(0.94 0.06 15);
 
-  /* Info — dusty slate blue, calm contrast on cream */
-  --color-info: oklch(0.48 0.14 235);
-  --color-info-emphasis: oklch(0.93 0.04 235);
+	/* Info — dusty slate blue, calm contrast on cream */
+	--color-info: oklch(0.48 0.14 235);
+	--color-info-emphasis: oklch(0.93 0.04 235);
 
-  /* === Border Radius === */
-  --radius-full: 9999px;
+	/* === Border Radius === */
+	--radius-full: 9999px;
 
-  /* sub-base - fine spacing, captions, labels */
-  --size-010: 0.193rem;
-  --size-020: 0.232rem;
-  --size-030: 0.279rem;
-  --size-040: 0.334rem;
-  --size-050: 0.4rem;
-  --size-060: 0.482rem;
-  --size-070: 0.579rem;
-  --size-080: 0.694rem;
-  --size-090: 0.833rem;
-  
-  /* main scale - type and spacing */
-  --size-100: 1rem;     /* body text, base spacing */
-  --size-200: 1.2rem;   /* small headings, comfortable padding */
-  --size-300: 1.44rem;  /* subheadings */
-  --size-400: 1.728rem; /* h3 range */
-  --size-500: 2.074rem; /* h2 range */
-  --size-600: 2.488rem; /* h1 range */
-  --size-700: 2.986rem; /* display */
-  --size-800: 3.583rem; /* large display */
-  --size-900: 4.299rem; /* hero/max display */
-  --size-1000: 6rem; /* Super Hero */
+	/* sub-base - fine spacing, captions, labels */
+	--size-010: 0.193rem;
+	--size-020: 0.232rem;
+	--size-030: 0.279rem;
+	--size-040: 0.334rem;
+	--size-050: 0.4rem;
+	--size-060: 0.482rem;
+	--size-070: 0.579rem;
+	--size-080: 0.694rem;
+	--size-090: 0.833rem;
 
-  /* Margins */
-  --page-margin: var(--size-100);
-  --max-width: 70rem;
+	/* main scale - type and spacing */
+	--size-100: 1rem; /* body text, base spacing */
+	--size-200: 1.2rem; /* small headings, comfortable padding */
+	--size-300: 1.44rem; /* subheadings */
+	--size-400: 1.728rem; /* h3 range */
+	--size-500: 2.074rem; /* h2 range */
+	--size-600: 2.488rem; /* h1 range */
+	--size-700: 2.986rem; /* display */
+	--size-800: 3.583rem; /* large display */
+	--size-900: 4.299rem; /* hero/max display */
+	--size-1000: 6rem; /* Super Hero */
+
+	/* Margins */
+	--page-margin: var(--size-100);
+	--max-width: 70rem;
 }
 
 /* Breakpoints */
-@media (min-width: 36rem) { :root { font-size: 1.1rem; } }
-@media (min-width: 48rem) { :root { font-size: 1.15rem; } }
-@media (min-width: 64rem) { :root { font-size: 1.2rem; } }
-@media (min-width: 77rem) { :root { font-size: 1.25rem; } }
-@media (min-width: 94rem) { :root { font-size: 1.3rem; } }
-@media (min-width: 48rem) { :root { --page-margin: var(--size-500); } }
-@media (min-width: 64rem) { :root { --page-margin: var(--size-800); } }
+@media (min-width: 36rem) {
+	:root {
+		font-size: 1.1rem;
+	}
+}
+@media (min-width: 48rem) {
+	:root {
+		font-size: 1.15rem;
+	}
+}
+@media (min-width: 64rem) {
+	:root {
+		font-size: 1.2rem;
+	}
+}
+@media (min-width: 77rem) {
+	:root {
+		font-size: 1.25rem;
+	}
+}
+@media (min-width: 94rem) {
+	:root {
+		font-size: 1.3rem;
+	}
+}
+@media (min-width: 48rem) {
+	:root {
+		--page-margin: var(--size-500);
+	}
+}
+@media (min-width: 64rem) {
+	:root {
+		--page-margin: var(--size-800);
+	}
+}
 
 body {
-  font-family: var(--font-serif);
-  background-color: var(--color-background);
-  font-size: 100%;
-  font-style: inherit;
-  font-weight: inherit;
+	font-family: var(--font-serif);
+	background-color: var(--color-background);
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
 }
 
 .page {
-  min-block-size: 100svh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  padding-inline: var(--page-margin);
+	min-block-size: 100svh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	padding-inline: var(--page-margin);
 }
-

@@ -11,9 +11,7 @@ describe('cld', () => {
 	});
 
 	it('omits the transform segment entirely when empty (no double slash)', () => {
-		expect(cld('foo')).toBe(
-			`https://res.cloudinary.com/${CLOUDINARY_CLOUD_NAME}/image/upload/foo`
-		);
+		expect(cld('foo')).toBe(`https://res.cloudinary.com/${CLOUDINARY_CLOUD_NAME}/image/upload/foo`);
 		expect(cld('foo', '')).toBe(
 			`https://res.cloudinary.com/${CLOUDINARY_CLOUD_NAME}/image/upload/foo`
 		);

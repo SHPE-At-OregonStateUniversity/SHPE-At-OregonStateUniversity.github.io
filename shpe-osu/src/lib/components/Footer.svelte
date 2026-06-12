@@ -1,6 +1,5 @@
 <script lang="ts">
-  import { page } from '$app/state';
-  import logo from '$lib/assets/logo.png';
+	import logo from '$lib/assets/logo.png';
 </script>
 
 <div class="site-footer">
@@ -22,24 +21,24 @@
 </div>
 
 <style>
-  .site-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	.site-footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		padding-top: var(--size-600);
-  }
+	}
 
-  .site-footer img {
-    width: var(--size-800);
-    height: auto;
-    flex-shrink: 0;
-  }
+	.site-footer img {
+		width: var(--size-800);
+		height: auto;
+		flex-shrink: 0;
+	}
 
-  @media (min-width: 36rem) {
-    .site-footer img {
-      width: 4rem;
-    }
-  }
+	@media (min-width: 36rem) {
+		.site-footer img {
+			width: 4rem;
+		}
+	}
 
 	.header {
 		font-size: var(--size-200);
