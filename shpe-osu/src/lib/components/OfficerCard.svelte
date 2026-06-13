@@ -24,6 +24,13 @@
 		height: 20rem;
 		overflow: hidden;
 		border-radius: 50%;
+		flex-shrink: 0;
+	}
+
+	.image :global(img) {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 
 	.info-box {
