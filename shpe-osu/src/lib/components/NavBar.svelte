@@ -72,6 +72,23 @@
 		text-align: center;
 		text-decoration: none;
 		color: inherit;
+		background-color: transparent;
+		transition:
+			background-color 90ms ease-out,
+			border-color 90ms ease-out,
+			color 90ms ease-out;
+	}
+
+	.nav-link a:hover,
+	.nav-link a:focus-visible {
+		background-color: var(--color-brand-primary);
+		color: var(--color-brand-cream);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.nav-link a {
+			transition: none;
+		}
 	}
 
 	@media (min-width: 36rem) {
