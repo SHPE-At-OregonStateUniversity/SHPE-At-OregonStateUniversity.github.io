@@ -1,6 +1,7 @@
 <script lang="ts">
 	import OfficerCard from '$lib/components/OfficerCard.svelte';
 	import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
+	import PageHeader from '$lib/components/PageHeader.svelte';
 
 	let { data } = $props();
 </script>
@@ -9,7 +10,7 @@
 	<title>Officers | SHPE OSU</title>
 </svelte:head>
 
-<h1>Officers</h1>
+<PageHeader title="Officers" />
 
 {#each data.officers as officer (officer.id)}
 	<OfficerCard>
@@ -25,12 +26,3 @@
 		<p>{officer.position}</p>
 	</OfficerCard>
 {/each}
-
-<style>
-	h1 {
-		font-size: var(--size-600);
-		font-weight: 400;
-		color: var(--color-brand-dark);
-		text-align: center;
-	}
-</style>
