@@ -12,6 +12,12 @@
 	--color-neutral-500: #c26340; /* Warm copper */
 	--color-neutral-900: #1a1a1a; /* Near-black */
 
+	/* === Gallery Panel Cycle === (sampled from Figma) */
+	--color-panel-orange: var(--color-brand-primary); /* #d73f09 Beaver Orange */
+	--color-panel-green: #4a773c; /* Forest green */
+	--color-panel-gold: #ffb500; /* Marigold */
+	--color-panel-blue: #b8dde1; /* Pale powder blue */
+
 	/* === Semantic Surface Tokens === */
 	--color-background: #fdfaf3;
 	--color-foreground: #000000;

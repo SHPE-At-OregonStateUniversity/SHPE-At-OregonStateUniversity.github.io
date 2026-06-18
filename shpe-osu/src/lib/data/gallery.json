@@ -10,7 +10,16 @@
 				"publicId": "shpe-osu/gallery/fall-kickoff-02",
 				"alt": "Students introducing themselves at kickoff"
 			},
-			{ "publicId": "shpe-osu/gallery/fall-kickoff-03", "alt": "Kickoff group photo" }
+			{ "publicId": "shpe-osu/gallery/fall-kickoff-03", "alt": "Kickoff group photo" },
+			{ "publicId": "shpe-osu/gallery/fall-kickoff-04", "alt": "Icebreaker activity at kickoff" },
+			{ "publicId": "shpe-osu/gallery/fall-kickoff-05", "alt": "Officers welcoming new members" },
+			{
+				"publicId": "shpe-osu/gallery/fall-kickoff-06",
+				"alt": "Members sharing a meal at kickoff"
+			},
+			{ "publicId": "shpe-osu/gallery/fall-kickoff-07", "alt": "Group discussion at kickoff" },
+			{ "publicId": "shpe-osu/gallery/fall-kickoff-08", "alt": "New members signing up" },
+			{ "publicId": "shpe-osu/gallery/fall-kickoff-09", "alt": "Kickoff closing photo" }
 		]
 	},
 	{
@@ -24,7 +33,16 @@
 				"publicId": "shpe-osu/gallery/convention-02",
 				"alt": "Members at the convention career fair"
 			},
-			{ "publicId": "shpe-osu/gallery/convention-03", "alt": "Convention closing ceremony" }
+			{ "publicId": "shpe-osu/gallery/convention-03", "alt": "Convention closing ceremony" },
+			{ "publicId": "shpe-osu/gallery/convention-04", "alt": "Members at a convention workshop" },
+			{ "publicId": "shpe-osu/gallery/convention-05", "alt": "Networking at the convention" },
+			{ "publicId": "shpe-osu/gallery/convention-06", "alt": "Members with company recruiters" },
+			{ "publicId": "shpe-osu/gallery/convention-07", "alt": "Convention keynote session" },
+			{ "publicId": "shpe-osu/gallery/convention-08", "alt": "Chapter dinner at the convention" },
+			{
+				"publicId": "shpe-osu/gallery/convention-09",
+				"alt": "Members exploring the convention city"
+			}
 		]
 	},
 	{
@@ -35,7 +53,33 @@
 				"alt": "Members volunteering at a local school"
 			},
 			{ "publicId": "shpe-osu/gallery/outreach-02", "alt": "STEM demo for local students" },
-			{ "publicId": "shpe-osu/gallery/outreach-03", "alt": "Outreach team group photo" }
+			{ "publicId": "shpe-osu/gallery/outreach-03", "alt": "Outreach team group photo" },
+			{
+				"publicId": "shpe-osu/gallery/outreach-04",
+				"alt": "Hands-on engineering activity with kids"
+			},
+			{ "publicId": "shpe-osu/gallery/outreach-05", "alt": "Members mentoring students" },
+			{ "publicId": "shpe-osu/gallery/outreach-06", "alt": "Setting up the outreach booth" },
+			{ "publicId": "shpe-osu/gallery/outreach-07", "alt": "Students building a project" },
+			{ "publicId": "shpe-osu/gallery/outreach-08", "alt": "Volunteers with community partners" },
+			{ "publicId": "shpe-osu/gallery/outreach-09", "alt": "Outreach event wrap-up" }
+		]
+	},
+	{
+		"event": "Noche de Familia",
+		"photos": [
+			{
+				"publicId": "shpe-osu/gallery/familia-01",
+				"alt": "Families gathering at Noche de Familia"
+			},
+			{ "publicId": "shpe-osu/gallery/familia-02", "alt": "Shared dinner at the event" },
+			{ "publicId": "shpe-osu/gallery/familia-03", "alt": "Members and families talking" },
+			{ "publicId": "shpe-osu/gallery/familia-04", "alt": "Cultural celebration at the event" },
+			{ "publicId": "shpe-osu/gallery/familia-05", "alt": "Group photo at Noche de Familia" },
+			{ "publicId": "shpe-osu/gallery/familia-06", "alt": "Officers hosting the evening" },
+			{ "publicId": "shpe-osu/gallery/familia-07", "alt": "Members enjoying music" },
+			{ "publicId": "shpe-osu/gallery/familia-08", "alt": "Families sharing stories" },
+			{ "publicId": "shpe-osu/gallery/familia-09", "alt": "Closing moment of the night" }
 		]
 	}
 ]
