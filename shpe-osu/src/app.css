@@ -12,6 +12,12 @@
 	--color-neutral-500: #c26340; /* Warm copper */
 	--color-neutral-900: #1a1a1a; /* Near-black */
 
+	/* === Gallery Panel Cycle === (sampled from Figma) */
+	--color-panel-orange: var(--color-brand-primary); /* #d73f09 Beaver Orange */
+	--color-panel-green: #4a773c; /* Forest green */
+	--color-panel-gold: #ffb500; /* Marigold */
+	--color-panel-blue: #b8dde1; /* Pale powder blue */
+
 	/* === Semantic Surface Tokens === */
 	--color-background: #fdfaf3;
 	--color-foreground: #000000;
@@ -115,9 +121,45 @@ body {
 	font-weight: inherit;
 }
 
+/* === Page-title heading === (type only; PageHeader owns centering + spacing.
+   Home's hero h1 overrides the size via its own scoped rule.) */
+h1 {
+	font-size: var(--size-700);
+	font-weight: 400;
+	line-height: 1.1;
+	color: var(--color-brand-dark);
+	margin: 0;
+}
+
 .page {
 	min-block-size: 100svh;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	padding-inline: var(--page-margin);
+	/* Scope the nav-vs-hero stacking (used by the scroll choreography). */
+	isolation: isolate;
+}
+
+/* Scroll choreography (modern browsers only): on pages with a full-screen hero,
+   the nav stays visually pinned at the top while the h1 passes it, then scrolls
+   away. The nav tracks scroll 1:1 over the first 50svh (so it appears fixed),
+   then holds its end transform and scrolls off naturally. Pages without a hero
+   (home) are unaffected. Global rule so it matches PageHeader's .hero-stage. */
+@supports (animation-timeline: scroll()) {
+	.page:has(.hero-stage) .header-slot {
+		/* Stay pinned until the title (centred at 50svh, exits the top ~50svh) has
+		   fully cleared — the +4rem clears the title's own height — then release.
+		   translate end == range end so the nav tracks scroll 1:1 (truly fixed)
+		   the whole time, then scrolls away. */
+		--nav-pin-end: calc(50svh + 4rem);
+		animation: nav-hold linear both;
+		animation-timeline: scroll(root block);
+		animation-range: 0 var(--nav-pin-end);
+	}
+
+	@keyframes nav-hold {
+		to {
+			transform: translateY(var(--nav-pin-end));
+		}
+	}
 }

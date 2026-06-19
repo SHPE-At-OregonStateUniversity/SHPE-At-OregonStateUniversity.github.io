@@ -15,7 +15,9 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: var(--size-100) 0;
+		/* Top padding only — no bottom padding, so the measured nav height ends at
+		   the nav elements and full-screen page titles center cleanly below it. */
+		padding-block: var(--size-100) 0;
 		gap: var(--size-080);
 	}
 

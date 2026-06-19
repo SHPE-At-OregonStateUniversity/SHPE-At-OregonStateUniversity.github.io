@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { cld } from '$lib/images';
+	import { cld, CLOUDINARY_CONFIGURED, PLACEHOLDER_IMAGE } from '$lib/images';
 
 	let {
 		publicId,
@@ -21,4 +21,9 @@
 	const src = $derived(cld(publicId, `f_auto,q_auto,w_${widths[widths.length - 1]}`));
 </script>
 
-<img {src} {srcset} {sizes} {alt} {loading} decoding="async" />
+{#if CLOUDINARY_CONFIGURED}
+	<img {src} {srcset} {sizes} {alt} {loading} decoding="async" />
+{:else}
+	<!-- Cloudinary not yet configured: show a neutral placeholder, not a 404. -->
+	<img src={PLACEHOLDER_IMAGE} {alt} {loading} decoding="async" data-placeholder />
+{/if}

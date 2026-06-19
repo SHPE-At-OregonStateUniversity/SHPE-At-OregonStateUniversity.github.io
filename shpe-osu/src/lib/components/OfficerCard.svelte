@@ -15,7 +15,9 @@
 		padding: var(--size-400);
 		border-radius: var(--radius-full);
 		align-items: center;
-		margin: var(--size-100);
+		/* Bottom-only: the header owns the gap above the first card, and this
+		   spaces cards from each other. No top margin to double-count. */
+		margin-block-end: var(--size-200);
 		place-items: center;
 	}
 
@@ -24,6 +26,13 @@
 		height: 20rem;
 		overflow: hidden;
 		border-radius: 50%;
+		flex-shrink: 0;
+	}
+
+	.image :global(img) {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 
 	.info-box {
