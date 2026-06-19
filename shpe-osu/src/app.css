@@ -136,4 +136,30 @@ h1 {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	padding-inline: var(--page-margin);
+	/* Scope the nav-vs-hero stacking (used by the scroll choreography). */
+	isolation: isolate;
+}
+
+/* Scroll choreography (modern browsers only): on pages with a full-screen hero,
+   the nav stays visually pinned at the top while the h1 passes it, then scrolls
+   away. The nav tracks scroll 1:1 over the first 50svh (so it appears fixed),
+   then holds its end transform and scrolls off naturally. Pages without a hero
+   (home) are unaffected. Global rule so it matches PageHeader's .hero-stage. */
+@supports (animation-timeline: scroll()) {
+	.page:has(.hero-stage) .header-slot {
+		/* Stay pinned until the title (centred at 50svh, exits the top ~50svh) has
+		   fully cleared — the +4rem clears the title's own height — then release.
+		   translate end == range end so the nav tracks scroll 1:1 (truly fixed)
+		   the whole time, then scrolls away. */
+		--nav-pin-end: calc(50svh + 4rem);
+		animation: nav-hold linear both;
+		animation-timeline: scroll(root block);
+		animation-range: 0 var(--nav-pin-end);
+	}
+
+	@keyframes nav-hold {
+		to {
+			transform: translateY(var(--nav-pin-end));
+		}
+	}
 }

@@ -74,6 +74,7 @@
 		gap: var(--size-200);
 		max-width: 20rem;
 		padding-bottom: var(--size-500);
+		margin-top: 2rem;
 	}
 
 	.page-body {
