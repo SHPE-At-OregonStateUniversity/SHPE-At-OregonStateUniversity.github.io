@@ -1,5 +1,15 @@
 <script lang="ts">
 	import logo from '$lib/assets/logo.png';
+
+	// TODO: replace the '#' placeholders with the chapter's real URLs.
+	const socials = [
+		{ label: 'Instagram', href: 'https://www.instagram.com/shpeatosu/' },
+		{ label: 'Tik Tok', href: 'https://www.tiktok.com/@shpenational' }
+	];
+	const clubLinks = [
+		{ label: 'Ideal Logic', href: 'https://apps.ideal-logic.com/osusee' },
+		{ label: 'OSU Club Site', href: 'https://see.oregonstate.edu/ela/find-clubs' }
+	];
 </script>
 
 <div class="site-footer">
@@ -7,15 +17,17 @@
 		<div class="header">
 			<p>Socials</p>
 		</div>
-		<p>Instagram</p>
-		<p>Tik Tok</p>
+		{#each socials as { label, href } (label)}
+			<a {href} target="_blank" rel="external noopener noreferrer">{label}</a>
+		{/each}
 	</div>
 	<div class="club-links">
 		<div class="header">
 			<p>Club Links</p>
 		</div>
-		<p>Ideal Logic</p>
-		<p>OSU Club Site</p>
+		{#each clubLinks as { label, href } (label)}
+			<a {href} target="_blank" rel="external noopener noreferrer">{label}</a>
+		{/each}
 	</div>
 	<img src={logo} alt="SHPE OSU Logo" />
 </div>
@@ -45,5 +57,18 @@
 		font-size: var(--size-200);
 		font-weight: 600;
 		color: var(--color-brand-dark);
+	}
+
+	.site-footer a {
+		display: block;
+		width: fit-content;
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.site-footer a:hover,
+	.site-footer a:focus-visible {
+		color: var(--color-brand-primary);
+		text-decoration: underline;
 	}
 </style>
